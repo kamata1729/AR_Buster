@@ -269,25 +269,25 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOR-al-Ucv">
-                                        <rect key="frame" x="220" y="140" width="35" height="35"/>
+                                        <rect key="frame" x="240" y="140" width="35" height="35"/>
                                         <fontDescription key="fontDescription" name="CP_Revenge" family="CP_Revenge" pointSize="35"/>
                                         <color key="textColor" name="darkBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ek1-Ao-63W">
-                                        <rect key="frame" x="220" y="185" width="35" height="35"/>
+                                        <rect key="frame" x="240" y="185" width="35" height="35"/>
                                         <fontDescription key="fontDescription" name="CP_Revenge" family="CP_Revenge" pointSize="35"/>
                                         <color key="textColor" name="darkBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4I-9U-9E6">
-                                        <rect key="frame" x="220" y="230" width="35" height="35"/>
+                                        <rect key="frame" x="240" y="230" width="35" height="35"/>
                                         <fontDescription key="fontDescription" name="CP_Revenge" family="CP_Revenge" pointSize="35"/>
                                         <color key="textColor" name="darkBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uah-NV-gW5">
-                                        <rect key="frame" x="220" y="275" width="35" height="35"/>
+                                        <rect key="frame" x="240" y="275" width="35" height="35"/>
                                         <fontDescription key="fontDescription" name="CP_Revenge" family="CP_Revenge" pointSize="35"/>
                                         <color key="textColor" name="darkBlue"/>
                                         <nil key="highlightedColor"/>
@@ -317,7 +317,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itK-rl-boJ">
-                                        <rect key="frame" x="220" y="320" width="35" height="35"/>
+                                        <rect key="frame" x="240" y="320" width="35" height="35"/>
                                         <fontDescription key="fontDescription" name="CP_Revenge" family="CP_Revenge" pointSize="35"/>
                                         <color key="textColor" name="darkBlue"/>
                                         <nil key="highlightedColor"/>
@@ -341,13 +341,13 @@
                                     <constraint firstItem="uah-NV-gW5" firstAttribute="top" secondItem="i4I-9U-9E6" secondAttribute="bottom" constant="10" id="aHd-r6-icy"/>
                                     <constraint firstItem="Sm5-2h-kfO" firstAttribute="leading" secondItem="ikO-Ie-wqg" secondAttribute="leading" constant="47" id="bku-WG-b1V"/>
                                     <constraint firstItem="h4s-vk-9XW" firstAttribute="top" secondItem="ikO-Ie-wqg" secondAttribute="top" constant="25" id="hgj-zd-ii2"/>
-                                    <constraint firstAttribute="trailing" secondItem="uah-NV-gW5" secondAttribute="trailing" constant="120" id="idy-SX-nuy"/>
-                                    <constraint firstAttribute="trailing" secondItem="itK-rl-boJ" secondAttribute="trailing" constant="120" id="igd-u4-b6J"/>
+                                    <constraint firstAttribute="trailing" secondItem="uah-NV-gW5" secondAttribute="trailing" constant="100" id="idy-SX-nuy"/>
+                                    <constraint firstAttribute="trailing" secondItem="itK-rl-boJ" secondAttribute="trailing" constant="100" id="igd-u4-b6J"/>
                                     <constraint firstItem="PO2-0f-yi3" firstAttribute="top" secondItem="qEt-5i-16z" secondAttribute="bottom" constant="20" id="jkn-EM-bUJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="i4I-9U-9E6" secondAttribute="trailing" constant="120" id="lrb-3W-iic"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ek1-Ao-63W" secondAttribute="trailing" constant="120" id="p6Q-fI-qAH"/>
+                                    <constraint firstAttribute="trailing" secondItem="i4I-9U-9E6" secondAttribute="trailing" constant="100" id="lrb-3W-iic"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ek1-Ao-63W" secondAttribute="trailing" constant="100" id="p6Q-fI-qAH"/>
                                     <constraint firstItem="qEt-5i-16z" firstAttribute="leading" secondItem="ikO-Ie-wqg" secondAttribute="leading" constant="30" id="pHK-1t-Jcr"/>
-                                    <constraint firstAttribute="trailing" secondItem="SOR-al-Ucv" secondAttribute="trailing" constant="120" id="qYi-39-fT6"/>
+                                    <constraint firstAttribute="trailing" secondItem="SOR-al-Ucv" secondAttribute="trailing" constant="100" id="qYi-39-fT6"/>
                                     <constraint firstItem="PRJ-HY-6JY" firstAttribute="leading" secondItem="ikO-Ie-wqg" secondAttribute="leading" constant="45" id="vf7-se-iGu"/>
                                     <constraint firstItem="i4I-9U-9E6" firstAttribute="top" secondItem="Ek1-Ao-63W" secondAttribute="bottom" constant="10" id="zPV-US-2c7"/>
                                     <constraint firstItem="PRJ-HY-6JY" firstAttribute="top" secondItem="539-bx-TFv" secondAttribute="bottom" constant="10" id="zsx-uK-EjQ"/>
@@ -460,6 +460,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WqJ-jN-qgf"/>
+        <segue reference="Dpf-eH-7Sb"/>
     </inferredMetricsTieBreakers>
 </document>

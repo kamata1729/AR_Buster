@@ -47,12 +47,13 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
                 sceneView.scene.rootNode.addChildNode(suzyNode)
             }
         }
+        //SCNTextを生成
         let str = "↓START"
         let depth :CGFloat = 0.03
         let text = SCNText(string: str, extrusionDepth: depth)
         text.font = UIFont(name: "CP_Revenge", size: 0.08);
         let textNode = SCNNode(geometry: text)
-        
+        //いろいろ調整して中心に来るようにする
         let (min, max) = (textNode.boundingBox)
         let x = CGFloat(max.x - min.x)
         textNode.position = SCNVector3(-(x/2), -1.0, -0.5)
@@ -186,6 +187,20 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
                 node.position = camera.convertPosition(position, to: nil) // カメラ位置からの偏差で求めた位置
                 node.eulerAngles = camera.eulerAngles  // 向きをカメラのオイラー角と同じにする
                 
+                let moveBy = SCNAction.moveBy(x: CGFloat((drand48()-0.5)*1.0), y: CGFloat((drand48()-0.5)*0.7), z: CGFloat((drand48()-0.5)*0.4), duration: 0.8)
+                let rotate = SCNAction.rotateBy(x: 0, y: CGFloat(720 * (Float.pi / 180)), z: 0, duration: 1.6)
+                //ノードを回転しながら移動させる
+                node.runAction(
+                    SCNAction.repeatForever(
+                        SCNAction.group([
+                            rotate,
+                            SCNAction.sequence([
+                                moveBy,
+                                moveBy.reversed()
+                                ])
+                            ])
+                    )
+                )
                 sceneView.scene.rootNode.addChildNode(node)
             }
         }
