@@ -19,7 +19,7 @@
         <!--Root View Controller-->
         <scene sceneID="r9f-DP-dru">
             <objects>
-                <viewController storyboardIdentifier="root" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Xb-He-9b2" customClass="RootViewController" customModule="ar_sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="root" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Xb-He-9b2" customClass="RootViewController" customModule="AR_Buster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="30e-jG-r1k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,7 @@
                                     <constraint firstAttribute="height" constant="50" id="CsS-xB-2kh"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5X-uG-ijy" customClass="customButton" customModule="ar_sample" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5X-uG-ijy" customClass="customButton" customModule="AR_Buster" customModuleProvider="target">
                                 <rect key="frame" x="77.5" y="457" width="220" height="60"/>
                                 <color key="backgroundColor" name="blue"/>
                                 <constraints>
@@ -89,6 +89,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="tapButton:" destination="7Xb-He-9b2" eventType="touchUpInside" id="yaQ-Xi-QOS"/>
                                     <segue destination="BV1-FR-VrT" kind="show" id="a4n-aH-vMm"/>
                                 </connections>
                             </button>
@@ -118,10 +119,10 @@
             </objects>
             <point key="canvasLocation" x="-676" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--ARViewController-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ar_sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ARViewController" id="BV1-FR-VrT" customClass="ARViewController" customModule="AR_Buster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zqq-Fx-prk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -138,12 +139,12 @@
                                 <color key="backgroundColor" name="green2"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XpP-Yq-jdd">
-                                <rect key="frame" x="151.5" y="612" width="72" height="48"/>
+                                <rect key="frame" x="152" y="612" width="72" height="48"/>
                                 <fontDescription key="fontDescription" name="CP_Revenge" family="CP_Revenge" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJy-It-4wJ" customClass="customButton" customModule="ar_sample" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJy-It-4wJ" customClass="customButton" customModule="AR_Buster" customModuleProvider="target">
                                 <rect key="frame" x="10" y="614" width="120" height="45"/>
                                 <color key="backgroundColor" name="green1"/>
                                 <constraints>
@@ -173,6 +174,13 @@
                                     <segue destination="7Xb-He-9b2" kind="showDetail" id="WqJ-jN-qgf"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CWU-US-yRk">
+                                <rect key="frame" x="275" y="507" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1U1-2i-AIE"/>
+                                    <constraint firstAttribute="height" constant="100" id="Rcw-4L-aAP"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -183,9 +191,11 @@
                             <constraint firstItem="X5a-mS-ai3" firstAttribute="top" secondItem="bj7-aS-E5S" secondAttribute="bottom" id="JrV-CB-wPx"/>
                             <constraint firstItem="bj7-aS-E5S" firstAttribute="top" secondItem="Zqq-Fx-prk" secondAttribute="top" id="KcC-Qf-0xp"/>
                             <constraint firstItem="g7V-dJ-WEl" firstAttribute="bottom" secondItem="JJy-It-4wJ" secondAttribute="bottom" constant="8" id="Mk0-9z-0Iv"/>
+                            <constraint firstItem="CWU-US-yRk" firstAttribute="trailing" secondItem="g7V-dJ-WEl" secondAttribute="trailing" id="QaU-xJ-yjh"/>
                             <constraint firstItem="X5a-mS-ai3" firstAttribute="top" secondItem="QZH-sV-32D" secondAttribute="bottom" id="UoG-uW-sao"/>
                             <constraint firstItem="XpP-Yq-jdd" firstAttribute="centerX" secondItem="Zqq-Fx-prk" secondAttribute="centerX" id="Ycm-Lt-i2G"/>
                             <constraint firstItem="X5a-mS-ai3" firstAttribute="trailing" secondItem="g7V-dJ-WEl" secondAttribute="trailing" id="eBr-Tb-sD8"/>
+                            <constraint firstItem="X5a-mS-ai3" firstAttribute="top" secondItem="CWU-US-yRk" secondAttribute="bottom" id="fxX-SI-H6B"/>
                             <constraint firstItem="X5a-mS-ai3" firstAttribute="leading" secondItem="g7V-dJ-WEl" secondAttribute="leading" id="gHT-R9-QK9"/>
                             <constraint firstItem="g7V-dJ-WEl" firstAttribute="bottom" secondItem="XpP-Yq-jdd" secondAttribute="bottom" constant="7" id="i1a-Kw-6Qj"/>
                             <constraint firstItem="g7V-dJ-WEl" firstAttribute="bottom" secondItem="bj7-aS-E5S" secondAttribute="bottom" constant="60" id="m78-fO-fpT"/>
@@ -197,6 +207,7 @@
                         <viewLayoutGuide key="safeArea" id="g7V-dJ-WEl"/>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="CWU-US-yRk" id="aZ8-dO-W8A"/>
                         <outlet property="sceneView" destination="bj7-aS-E5S" id="Ui5-4D-NjE"/>
                         <outlet property="timerLabel" destination="XpP-Yq-jdd" id="L11-24-BQY"/>
                     </connections>
@@ -208,7 +219,7 @@
         <!--Result View Controller-->
         <scene sceneID="37U-iI-XvW">
             <objects>
-                <viewController storyboardIdentifier="result" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sE7-Bh-UVx" customClass="ResultViewController" customModule="ar_sample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="result" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sE7-Bh-UVx" customClass="ResultViewController" customModule="AR_Buster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CEl-gw-udV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -217,7 +228,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="結果発表!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqt-5g-poW">
-                                        <rect key="frame" x="78.5" y="40" width="218.5" height="50"/>
+                                        <rect key="frame" x="79" y="40" width="218.5" height="50"/>
                                         <fontDescription key="fontDescription" name="CP_Revenge" family="CP_Revenge" pointSize="50"/>
                                         <color key="textColor" name="brown"/>
                                         <nil key="highlightedColor"/>
@@ -233,8 +244,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikO-Ie-wqg">
                                 <rect key="frame" x="0.0" y="120" width="375" height="387"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4s-vk-9XW">
-                                        <rect key="frame" x="249.5" y="25" width="85.5" height="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="０点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4s-vk-9XW">
+                                        <rect key="frame" x="245" y="25" width="90" height="45"/>
                                         <fontDescription key="fontDescription" name="CP_Revenge" family="CP_Revenge" pointSize="45"/>
                                         <color key="textColor" name="darkBlue"/>
                                         <nil key="highlightedColor"/>
@@ -352,7 +363,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EkT-Mc-oyX">
                                 <rect key="frame" x="0.0" y="507" width="375" height="110"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUJ-TL-2oP" customClass="customButton" customModule="ar_sample" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FUJ-TL-2oP" customClass="customButton" customModule="AR_Buster" customModuleProvider="target">
                                         <rect key="frame" x="72" y="30" width="230" height="60"/>
                                         <color key="backgroundColor" name="brown"/>
                                         <constraints>
@@ -379,6 +390,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
+                                            <action selector="tapButton:" destination="sE7-Bh-UVx" eventType="touchUpInside" id="c4T-qy-XC7"/>
                                             <segue destination="7Xb-He-9b2" kind="showDetail" id="Dpf-eH-7Sb"/>
                                         </connections>
                                     </button>
@@ -434,62 +446,20 @@
         <namedColor name="darkBlue">
             <color red="0.18000000720000001" green="0.28999999170000001" blue="0.36899998779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="darkBlue">
-            <color red="0.18000000720000001" green="0.28999999170000001" blue="0.36899998779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="darkBlue">
-            <color red="0.18000000720000001" green="0.28999999170000001" blue="0.36899998779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="darkBlue">
-            <color red="0.18000000720000001" green="0.28999999170000001" blue="0.36899998779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="darkBlue">
-            <color red="0.18000000720000001" green="0.28999999170000001" blue="0.36899998779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="darkBlue">
-            <color red="0.18000000715255737" green="0.28999999165534973" blue="0.36899998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="darkBlue">
-            <color red="0.18000000720000001" green="0.28999999170000001" blue="0.36899998779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="darkBlue">
-            <color red="0.18000000720000001" green="0.28999999170000001" blue="0.36899998779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="darkBlue">
-            <color red="0.18000000720000001" green="0.28999999170000001" blue="0.36899998779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="darkBlue">
-            <color red="0.18000000720000001" green="0.28999999170000001" blue="0.36899998779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="darkBlue">
-            <color red="0.18000000720000001" green="0.28999999170000001" blue="0.36899998779999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="green1">
-            <color red="0.49000000953674316" green="0.76499998569488525" blue="0.51399999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="green1">
             <color red="0.49000000953674316" green="0.76499998569488525" blue="0.51399999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="green2">
             <color red="0.41600000858306885" green="0.6119999885559082" blue="0.47099998593330383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="green2">
-            <color red="0.41600000858306885" green="0.6119999885559082" blue="0.47099998593330383" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="green3">
             <color red="0.2669999897480011" green="0.4309999942779541" blue="0.36100000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="green3">
-            <color red="0.2669999897480011" green="0.4309999942779541" blue="0.36100000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="white">
-            <color red="1" green="0.94499999284744263" blue="0.7369999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="white">
             <color red="1" green="0.94499999284744263" blue="0.7369999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Dpf-eH-7Sb"/>
+        <segue reference="WqJ-jN-qgf"/>
     </inferredMetricsTieBreakers>
 </document>

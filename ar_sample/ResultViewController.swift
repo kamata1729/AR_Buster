@@ -17,10 +17,15 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var score4: UILabel!
     @IBOutlet weak var score5: UILabel!
     
+    @IBAction func tapButton(_ sender: Any) {
+        generator.impactOccurred()
+    }
+    let generator = UIImpactFeedbackGenerator(style: .medium)
     var score: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        generator.prepare()
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         if let score = appDelegate.score {
             self.score = score

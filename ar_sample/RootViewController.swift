@@ -9,9 +9,14 @@
 import UIKit
 
 class RootViewController: UIViewController {
-
+    
+    @IBAction func tapButton(_ sender: Any) {
+        generator.impactOccurred()
+    }
+    let generator = UIImpactFeedbackGenerator(style: .medium)
     override func viewDidLoad() {
         super.viewDidLoad()
+        generator.prepare()
     }
 
     override func didReceiveMemoryWarning() {
