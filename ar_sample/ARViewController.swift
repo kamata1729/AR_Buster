@@ -58,7 +58,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         let x = CGFloat(max.x - min.x)
         textNode.position = SCNVector3(-(x/2), -1.0, -0.5)
         let material = SCNMaterial()
-        material.diffuse.contents = UIImage(named:"block.jpg")
+        material.diffuse.contents = UIImage(named:"texture2.jpg")
         material.locksAmbientWithDiffuse = true
         
         textNode.geometry?.firstMaterial = material

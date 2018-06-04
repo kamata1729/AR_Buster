@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		423E9FDA20C588C000694700 /* original.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 423E9FD920C588C000694700 /* original.jpeg */; };
+		423E9FDC20C5895E00694700 /* texture2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 423E9FDB20C5895E00694700 /* texture2.jpg */; };
 		42763A6B20B7EE7300C0660C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42763A6A20B7EE7300C0660C /* AppDelegate.swift */; };
 		42763A6D20B7EE7300C0660C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 42763A6C20B7EE7300C0660C /* art.scnassets */; };
 		42763A6F20B7EE7300C0660C /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42763A6E20B7EE7300C0660C /* ARViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		423E9FD920C588C000694700 /* original.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = original.jpeg; sourceTree = SOURCE_ROOT; };
+		423E9FDB20C5895E00694700 /* texture2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture2.jpg; sourceTree = SOURCE_ROOT; };
 		42763A6720B7EE7300C0660C /* AR_Buster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AR_Buster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42763A6A20B7EE7300C0660C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42763A6C20B7EE7300C0660C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 				42763A6C20B7EE7300C0660C /* art.scnassets */,
 				42763A9220C4F10000C0660C /* block.jpg */,
 				42763A9620C5104F00C0660C /* arrow.png */,
+				423E9FD920C588C000694700 /* original.jpeg */,
+				423E9FDB20C5895E00694700 /* texture2.jpg */,
 				42763A6E20B7EE7300C0660C /* ARViewController.swift */,
 				42763A7E20B9A87700C0660C /* ResultViewController.swift */,
 				42763A8020B9A90C00C0660C /* RootViewController.swift */,
@@ -141,11 +147,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				42763A9320C4F10000C0660C /* block.jpg in Resources */,
+				423E9FDC20C5895E00694700 /* texture2.jpg in Resources */,
 				42763A6D20B7EE7300C0660C /* art.scnassets in Resources */,
 				42763A7720B7EE7600C0660C /* LaunchScreen.storyboard in Resources */,
 				42763A8520BD4C2800C0660C /* CP_Revenge.ttf in Resources */,
 				42763A9720C5104F00C0660C /* arrow.png in Resources */,
 				42763A7420B7EE7600C0660C /* Assets.xcassets in Resources */,
+				423E9FDA20C588C000694700 /* original.jpeg in Resources */,
 				42763A7220B7EE7300C0660C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
