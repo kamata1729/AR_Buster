@@ -4,17 +4,17 @@ import ARKit
 
 class ARViewController: UIViewController, ARSCNViewDelegate {
 
-    @IBOutlet weak var sceneView: ARSCNView!
-    @IBOutlet weak var timerLabel: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet private weak var sceneView: ARSCNView!
+    @IBOutlet private weak var timerLabel: UILabel!
+    @IBOutlet private weak var imageView: UIImageView!
     
-    var timer: Timer?
-    var timer2: Timer?
-    var isFirstObjTapped: Bool = false
-    var timerCnt :Int = 30 //タイムリミットは30sec
-    var timerCnt2 :Int = 0
-    var score: Int = 0
-    let generator = UIImpactFeedbackGenerator(style: .medium) //Taptic Engine generator
+    private var timer: Timer?
+    private var timer2: Timer?
+    private var isFirstObjTapped: Bool = false
+    private var timerCnt :Int = 30 //タイムリミットは30sec
+    private var timerCnt2 :Int = 0
+    public var score: Int = 0
+    private let generator = UIImpactFeedbackGenerator(style: .medium) //Taptic Engine generator
 
     // MARK: - viewDidLoad
     override func viewDidLoad() {
@@ -44,7 +44,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         if let scene = SCNScene(named: "art.scnassets/Suzy.scn") {
             if let suzyNode = scene.rootNode.childNode(withName: "Suzy", recursively: true) {
                 suzyNode.position = SCNVector3(x: 0, y: -0.2, z: -0.5)
-                //suzyNode.addParticleSystem(SCNParticleSystem(named: "Fire.scnp", inDirectory: "")!)
                 sceneView.scene.rootNode.addChildNode(suzyNode)
             }
         }
@@ -85,7 +84,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         let hitTestResult = sceneView.hitTest(location, types: .featurePoint)
         if let result = hitTestResult.first {
-            print("hit")
             if let camera = sceneView.pointOfView {
                 var position = SCNVector3()
                 var flag: Bool = false
@@ -102,6 +100,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
                             self.sceneView.scene.rootNode.enumerateChildNodes {(node, _) in
                                 node.removeFromParentNode() //該当のノードを削除
                             }
+                            
                             score += 1
                             generator.impactOccurred() //Taptic Engine
                             print("i = " + String(i))
@@ -160,7 +159,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
                     let z = node.position.z
                     let transPosition :SCNVector3 = SCNVector3(x: x*invMat.m11 + y*invMat.m21 + z*invMat.m31, y: x*invMat.m12 + y*invMat.m22 + z*invMat.m32, z: x*invMat.m13 + y*invMat.m23 + z*invMat.m33)
                     let angle = (-1) * atan2(transPosition.y - camera.position.y, transPosition.x - camera.position.x)
-                    print("angle degree: " + String(Double(angle)*180.0/Double.pi))
                     imageView.transform = CGAffineTransform(rotationAngle: CGFloat(angle))
                 }
             }
@@ -177,7 +175,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
     }
     
     
-    //カメラ周辺のランダムな位置にオブジェクトを配置する
+    // カメラ周辺のランダムな位置にオブジェクトを配置する
     private func makeNewObj(camera :SCNNode) {
         if let scene = SCNScene(named: "art.scnassets/Suzy.scn") {
             if let node = scene.rootNode.childNode(withName: "Suzy", recursively: true) {
@@ -187,6 +185,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
                 let position = SCNVector3(randx, randy, randz-0.4)
                 node.position = camera.convertPosition(position, to: nil) // カメラ位置からの偏差で求めた位置
                 node.eulerAngles = camera.eulerAngles  // 向きをカメラのオイラー角と同じにする
+                
                 sceneView.scene.rootNode.addChildNode(node)
             }
         }
@@ -209,6 +208,10 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             }
         }
         return !flag
+    }
+    
+    func particle() {
+      
     }
     
     override func didReceiveMemoryWarning() {

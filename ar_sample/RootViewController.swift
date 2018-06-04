@@ -25,5 +25,5 @@ class RootViewController: UIViewController {
 }
 
 @IBDesignable class customButton: UIButton {
-    
+
 }
