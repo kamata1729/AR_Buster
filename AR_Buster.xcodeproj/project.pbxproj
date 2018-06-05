@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003D11FEC942BC7F16122320 /* Pods_AR_Buster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCF0FB45A37051BB3855CAB /* Pods_AR_Buster.framework */; };
 		423E9FDA20C588C000694700 /* original.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 423E9FD920C588C000694700 /* original.jpeg */; };
 		423E9FDC20C5895E00694700 /* texture2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 423E9FDB20C5895E00694700 /* texture2.jpg */; };
 		42763A6B20B7EE7300C0660C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42763A6A20B7EE7300C0660C /* AppDelegate.swift */; };
@@ -38,6 +39,9 @@
 		42763A8420BD4C2700C0660C /* CP_Revenge.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CP_Revenge.ttf; path = cprevenge_tte/CP_Revenge.ttf; sourceTree = SOURCE_ROOT; };
 		42763A9220C4F10000C0660C /* block.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = block.jpg; sourceTree = SOURCE_ROOT; };
 		42763A9620C5104F00C0660C /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arrow.png; path = ../../../../Pictures/arrow.png; sourceTree = "<group>"; };
+		474F5D80550CA4D5BF8D9ACF /* Pods-AR_Buster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR_Buster.release.xcconfig"; path = "Pods/Target Support Files/Pods-AR_Buster/Pods-AR_Buster.release.xcconfig"; sourceTree = "<group>"; };
+		AFCF0FB45A37051BB3855CAB /* Pods_AR_Buster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AR_Buster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACE40626FC96D419054D91A /* Pods-AR_Buster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR_Buster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AR_Buster/Pods-AR_Buster.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003D11FEC942BC7F16122320 /* Pods_AR_Buster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ADE18717C69D5EA887CC303 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFCF0FB45A37051BB3855CAB /* Pods_AR_Buster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1C333F7477A9D77FD3DDDFA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DACE40626FC96D419054D91A /* Pods-AR_Buster.debug.xcconfig */,
+				474F5D80550CA4D5BF8D9ACF /* Pods-AR_Buster.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		42763A5E20B7EE7300C0660C = {
 			isa = PBXGroup;
 			children = (
 				42763A6920B7EE7300C0660C /* ar_sample */,
 				42763A6820B7EE7300C0660C /* Products */,
+				1C333F7477A9D77FD3DDDFA3 /* Pods */,
+				1ADE18717C69D5EA887CC303 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42763A7B20B7EE7600C0660C /* Build configuration list for PBXNativeTarget "AR_Buster" */;
 			buildPhases = (
+				C7FAC3D0A026072537D4DDF2 /* [CP] Check Pods Manifest.lock */,
 				42763A6320B7EE7300C0660C /* Sources */,
 				42763A6420B7EE7300C0660C /* Frameworks */,
 				42763A6520B7EE7300C0660C /* Resources */,
+				55A56EFAEFC97F1D7EAF3781 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +185,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55A56EFAEFC97F1D7EAF3781 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AR_Buster/Pods-AR_Buster-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TouchVisualizer/TouchVisualizer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TouchVisualizer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AR_Buster/Pods-AR_Buster-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7FAC3D0A026072537D4DDF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR_Buster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42763A6320B7EE7300C0660C /* Sources */ = {
@@ -310,6 +375,7 @@
 		};
 		42763A7C20B7EE7600C0660C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DACE40626FC96D419054D91A /* Pods-AR_Buster.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -328,6 +394,7 @@
 		};
 		42763A7D20B7EE7600C0660C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 474F5D80550CA4D5BF8D9ACF /* Pods-AR_Buster.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -65,12 +65,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         sceneView.scene.rootNode.addChildNode(textNode)
         
-        var camera = sceneView.pointOfView {
-        didSet{
-            print("didset")
-        }
-        }
-        
     }
     
     // MARK: - viewWillDisappear
@@ -94,9 +88,9 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
                         position.x = (1 - t)*camera.position.x + t * result.worldTransform.columns.3.x
                         position.y = (1 - t)*camera.position.y + t * result.worldTransform.columns.3.y
                         position.z = (1 - t)*camera.position.z + t * result.worldTransform.columns.3.z
-                        let isInRangeX: Bool = isInRange(tapPosition: position.x, objPosition: node.position.x, radius: 0.08)
-                        let isInRangeY: Bool = isInRange(tapPosition: position.y, objPosition: node.position.y, radius: 0.08)
-                        let isInRangeZ: Bool = isInRange(tapPosition: position.z, objPosition: node.position.z, radius: 0.08)
+                        let isInRangeX: Bool = isInRange(tapPosition: position.x, objPosition: node.position.x, radius: 0.05)
+                        let isInRangeY: Bool = isInRange(tapPosition: position.y, objPosition: node.position.y, radius: 0.05)
+                        let isInRangeZ: Bool = isInRange(tapPosition: position.z, objPosition: node.position.z, radius: 0.05)
                         if(isInRangeX && isInRangeY && isInRangeZ){
                             self.sceneView.scene.rootNode.enumerateChildNodes {(node, _) in
                                 node.removeFromParentNode() //該当のノードを削除
@@ -104,8 +98,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
                             
                             score += 1
                             generator.impactOccurred() //Taptic Engine
-                            print("i = " + String(i))
-                            print("score: " + String(score))
                             
                             timerCnt2 = 0
                             makeNewObj(camera: camera) //新しいオブジェクトを生成
@@ -224,11 +216,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         }
         return !flag
     }
-    
-    func particle() {
-      
-    }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.

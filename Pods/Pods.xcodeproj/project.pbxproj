@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1945C648C23BA3C77004832D1CF29302 /* TouchVisualizer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 299BC19DE40BC7883ABD0088BFD6F81D /* TouchVisualizer-dummy.m */; };
+		34D978883E0845CBFD85EB481E1DD456 /* TouchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E889F93D4387F004C41F72906B9F9D59 /* TouchView.swift */; };
+		3580E68396C85382CAFF6DC9069C03E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		4723CB50C85A7BA9959CDB8A14A97D58 /* TouchVisualizer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B15D092FA8FA10D72D4A6309D24000D6 /* TouchVisualizer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54797A4BF38F5B6609660C56D9420DF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		5BE5FEAC3A1E74855264013913844065 /* Pods-AR_Buster-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6831ABEA07281D24D0679DA1AFB3667 /* Pods-AR_Buster-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98060ECCCA9E888212B39761EF4B0C2C /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92D054C03368E03AC3744EF43098812 /* Visualizer.swift */; };
+		99FBA4640A58DB35F49F7E6FE42C37A9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA29D6B56B90EB8799E14E6A23A817DC /* Configuration.swift */; };
+		A339C232885DA7F68DF5CBBD4D1749D4 /* UIWindow+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605F498E7F8231702B5FE4A4C24B7392 /* UIWindow+Swizzle.swift */; };
+		F10F82262BCF70B6D101722D330BEDDF /* Pods-AR_Buster-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22354CD95CDDBCF56D7D4C94D3302112 /* Pods-AR_Buster-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C19FAE9096A87B001397E8412854261 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8565478D7328E2832CAEF1D728F4ADAE;
+			remoteInfo = TouchVisualizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A94F46A3A41AA5A0D01502BB9827229 /* Pods_AR_Buster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AR_Buster.framework; path = "Pods-AR_Buster.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DD34EAABB4230D5E6C6C7F2510225FA /* Pods-AR_Buster.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AR_Buster.modulemap"; sourceTree = "<group>"; };
+		22354CD95CDDBCF56D7D4C94D3302112 /* Pods-AR_Buster-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AR_Buster-dummy.m"; sourceTree = "<group>"; };
+		299BC19DE40BC7883ABD0088BFD6F81D /* TouchVisualizer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TouchVisualizer-dummy.m"; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5F07CF8996A68B794466A2A7C68373C6 /* Pods-AR_Buster-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AR_Buster-resources.sh"; sourceTree = "<group>"; };
+		605F498E7F8231702B5FE4A4C24B7392 /* UIWindow+Swizzle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIWindow+Swizzle.swift"; path = "TouchVisualizer/UIWindow+Swizzle.swift"; sourceTree = "<group>"; };
+		6C2E246AC6869094CE924A87A702834D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C669045648F889C4552C567FB76893D /* TouchVisualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TouchVisualizer.framework; path = TouchVisualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF155AB28BA82D3D1DA5AC88544466E /* Pods-AR_Buster-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AR_Buster-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7201F1647AFA1FEBE1157220D0002F83 /* Pods-AR_Buster-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AR_Buster-frameworks.sh"; sourceTree = "<group>"; };
+		7E0896B58E3BF2E07A14B8EB79289639 /* Pods-AR_Buster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AR_Buster.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9C6FFD1CA268454BEB15A4EFF680C920 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E3A978242BFD1310707E5E9F408A3E /* TouchVisualizer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TouchVisualizer-prefix.pch"; sourceTree = "<group>"; };
+		A92D054C03368E03AC3744EF43098812 /* Visualizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Visualizer.swift; path = TouchVisualizer/Visualizer.swift; sourceTree = "<group>"; };
+		AC4A5E1A0AAEE6D5DE66BA73EF174D75 /* Pods-AR_Buster-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AR_Buster-acknowledgements.plist"; sourceTree = "<group>"; };
+		B15D092FA8FA10D72D4A6309D24000D6 /* TouchVisualizer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TouchVisualizer-umbrella.h"; sourceTree = "<group>"; };
+		B66D4AF2D0D0F712FFD3B5856807FA71 /* TouchVisualizer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TouchVisualizer.xcconfig; sourceTree = "<group>"; };
+		C49526886CCDA3CEB4689E45BB71B33A /* Pods-AR_Buster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AR_Buster.release.xcconfig"; sourceTree = "<group>"; };
+		DA29D6B56B90EB8799E14E6A23A817DC /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = TouchVisualizer/Configuration.swift; sourceTree = "<group>"; };
+		E6831ABEA07281D24D0679DA1AFB3667 /* Pods-AR_Buster-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AR_Buster-umbrella.h"; sourceTree = "<group>"; };
+		E80A2BF2035BD9F02BB186C4DC34AAB2 /* TouchVisualizer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TouchVisualizer.modulemap; sourceTree = "<group>"; };
+		E889F93D4387F004C41F72906B9F9D59 /* TouchView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TouchView.swift; path = TouchVisualizer/TouchView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99DC1DA17664B57600EBA2808255B0D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3580E68396C85382CAFF6DC9069C03E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3E87F5762BFC3C019FBC50FBF486DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54797A4BF38F5B6609660C56D9420DF7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		314A6CB2E017C8FE7069640275AD0DBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0ECD0CE6208024A6A7AF5D3AFC1AB3C /* TouchVisualizer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		428285E091CAE1A9D96BF1A0D09D8ACC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C2E246AC6869094CE924A87A702834D /* Info.plist */,
+				E80A2BF2035BD9F02BB186C4DC34AAB2 /* TouchVisualizer.modulemap */,
+				B66D4AF2D0D0F712FFD3B5856807FA71 /* TouchVisualizer.xcconfig */,
+				299BC19DE40BC7883ABD0088BFD6F81D /* TouchVisualizer-dummy.m */,
+				A5E3A978242BFD1310707E5E9F408A3E /* TouchVisualizer-prefix.pch */,
+				B15D092FA8FA10D72D4A6309D24000D6 /* TouchVisualizer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TouchVisualizer";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		60954D9B8C440A12857FC11F68B0EC39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A94F46A3A41AA5A0D01502BB9827229 /* Pods_AR_Buster.framework */,
+				6C669045648F889C4552C567FB76893D /* TouchVisualizer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				314A6CB2E017C8FE7069640275AD0DBA /* Pods */,
+				60954D9B8C440A12857FC11F68B0EC39 /* Products */,
+				BBF28BCD8F5711947D67F025857477F8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BBF28BCD8F5711947D67F025857477F8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E99B16AFEBA0B2CDC2978CF18C244BA7 /* Pods-AR_Buster */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E99B16AFEBA0B2CDC2978CF18C244BA7 /* Pods-AR_Buster */ = {
+			isa = PBXGroup;
+			children = (
+				9C6FFD1CA268454BEB15A4EFF680C920 /* Info.plist */,
+				0DD34EAABB4230D5E6C6C7F2510225FA /* Pods-AR_Buster.modulemap */,
+				6FF155AB28BA82D3D1DA5AC88544466E /* Pods-AR_Buster-acknowledgements.markdown */,
+				AC4A5E1A0AAEE6D5DE66BA73EF174D75 /* Pods-AR_Buster-acknowledgements.plist */,
+				22354CD95CDDBCF56D7D4C94D3302112 /* Pods-AR_Buster-dummy.m */,
+				7201F1647AFA1FEBE1157220D0002F83 /* Pods-AR_Buster-frameworks.sh */,
+				5F07CF8996A68B794466A2A7C68373C6 /* Pods-AR_Buster-resources.sh */,
+				E6831ABEA07281D24D0679DA1AFB3667 /* Pods-AR_Buster-umbrella.h */,
+				7E0896B58E3BF2E07A14B8EB79289639 /* Pods-AR_Buster.debug.xcconfig */,
+				C49526886CCDA3CEB4689E45BB71B33A /* Pods-AR_Buster.release.xcconfig */,
+			);
+			name = "Pods-AR_Buster";
+			path = "Target Support Files/Pods-AR_Buster";
+			sourceTree = "<group>";
+		};
+		F0ECD0CE6208024A6A7AF5D3AFC1AB3C /* TouchVisualizer */ = {
+			isa = PBXGroup;
+			children = (
+				DA29D6B56B90EB8799E14E6A23A817DC /* Configuration.swift */,
+				E889F93D4387F004C41F72906B9F9D59 /* TouchView.swift */,
+				605F498E7F8231702B5FE4A4C24B7392 /* UIWindow+Swizzle.swift */,
+				A92D054C03368E03AC3744EF43098812 /* Visualizer.swift */,
+				428285E091CAE1A9D96BF1A0D09D8ACC /* Support Files */,
+			);
+			name = TouchVisualizer;
+			path = TouchVisualizer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2967E56E831660ED6ED87052F2304F6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4723CB50C85A7BA9959CDB8A14A97D58 /* TouchVisualizer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71291C3681DA3C2A2FAAC10C77F84B74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BE5FEAC3A1E74855264013913844065 /* Pods-AR_Buster-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		411AACB4CE46AAA73525A9EB46A311D5 /* Pods-AR_Buster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3614CD51F0B299231B7F93846F969C12 /* Build configuration list for PBXNativeTarget "Pods-AR_Buster" */;
+			buildPhases = (
+				32202BD0477E6F859DBD95111AB911AD /* Sources */,
+				99DC1DA17664B57600EBA2808255B0D2 /* Frameworks */,
+				71291C3681DA3C2A2FAAC10C77F84B74 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E56D8BA0F24336364C99FFABAD9274B4 /* PBXTargetDependency */,
+			);
+			name = "Pods-AR_Buster";
+			productName = "Pods-AR_Buster";
+			productReference = 0A94F46A3A41AA5A0D01502BB9827229 /* Pods_AR_Buster.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8565478D7328E2832CAEF1D728F4ADAE /* TouchVisualizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6B019F66201DA6CB835B2C387FAB00B /* Build configuration list for PBXNativeTarget "TouchVisualizer" */;
+			buildPhases = (
+				479AA7555BCCA7753FE661EE32124677 /* Sources */,
+				E3E87F5762BFC3C019FBC50FBF486DE0 /* Frameworks */,
+				2967E56E831660ED6ED87052F2304F6D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchVisualizer;
+			productName = TouchVisualizer;
+			productReference = 6C669045648F889C4552C567FB76893D /* TouchVisualizer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 60954D9B8C440A12857FC11F68B0EC39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				411AACB4CE46AAA73525A9EB46A311D5 /* Pods-AR_Buster */,
+				8565478D7328E2832CAEF1D728F4ADAE /* TouchVisualizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32202BD0477E6F859DBD95111AB911AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F10F82262BCF70B6D101722D330BEDDF /* Pods-AR_Buster-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		479AA7555BCCA7753FE661EE32124677 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99FBA4640A58DB35F49F7E6FE42C37A9 /* Configuration.swift in Sources */,
+				34D978883E0845CBFD85EB481E1DD456 /* TouchView.swift in Sources */,
+				1945C648C23BA3C77004832D1CF29302 /* TouchVisualizer-dummy.m in Sources */,
+				A339C232885DA7F68DF5CBBD4D1749D4 /* UIWindow+Swizzle.swift in Sources */,
+				98060ECCCA9E888212B39761EF4B0C2C /* Visualizer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E56D8BA0F24336364C99FFABAD9274B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TouchVisualizer;
+			target = 8565478D7328E2832CAEF1D728F4ADAE /* TouchVisualizer */;
+			targetProxy = 7C19FAE9096A87B001397E8412854261 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		192D0B9E3D0D18284CFCF99B273883D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B66D4AF2D0D0F712FFD3B5856807FA71 /* TouchVisualizer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TouchVisualizer/TouchVisualizer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TouchVisualizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TouchVisualizer/TouchVisualizer.modulemap";
+				PRODUCT_MODULE_NAME = TouchVisualizer;
+				PRODUCT_NAME = TouchVisualizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		229CE1D91EE53D58843F50DF64CAAB4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B66D4AF2D0D0F712FFD3B5856807FA71 /* TouchVisualizer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TouchVisualizer/TouchVisualizer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TouchVisualizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TouchVisualizer/TouchVisualizer.modulemap";
+				PRODUCT_MODULE_NAME = TouchVisualizer;
+				PRODUCT_NAME = TouchVisualizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4440855E8BE6DCC60B3706BC2C01F5E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E0896B58E3BF2E07A14B8EB79289639 /* Pods-AR_Buster.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AR_Buster/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AR_Buster/Pods-AR_Buster.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6EE3301D8EC7A87119E5EECFFE0539FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49526886CCDA3CEB4689E45BB71B33A /* Pods-AR_Buster.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AR_Buster/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AR_Buster/Pods-AR_Buster.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		703082A85162812D3B777E668767AD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */,
+				703082A85162812D3B777E668767AD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3614CD51F0B299231B7F93846F969C12 /* Build configuration list for PBXNativeTarget "Pods-AR_Buster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4440855E8BE6DCC60B3706BC2C01F5E4 /* Debug */,
+				6EE3301D8EC7A87119E5EECFFE0539FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6B019F66201DA6CB835B2C387FAB00B /* Build configuration list for PBXNativeTarget "TouchVisualizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229CE1D91EE53D58843F50DF64CAAB4B /* Debug */,
+				192D0B9E3D0D18284CFCF99B273883D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

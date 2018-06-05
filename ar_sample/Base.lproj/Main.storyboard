@@ -27,19 +27,24 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T1c-tE-DAE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="447"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="PAF-6c-75k">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="PAF-6c-75k">
                                         <rect key="frame" x="0.0" y="90" width="375" height="217"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="217" id="JKh-UX-UFQ"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="white"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="PAF-6c-75k" firstAttribute="top" secondItem="T1c-tE-DAE" secondAttribute="top" constant="90" id="5zh-iq-BPk"/>
                                     <constraint firstAttribute="trailing" secondItem="PAF-6c-75k" secondAttribute="trailing" id="V9w-lr-Lr1"/>
                                     <constraint firstItem="PAF-6c-75k" firstAttribute="leading" secondItem="T1c-tE-DAE" secondAttribute="leading" id="b3q-m0-aHu"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="yjM-uc-l61" appends="YES" id="gRP-hG-bwF"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98d-0f-F8K">
                                 <rect key="frame" x="0.0" y="447" width="375" height="100"/>
@@ -114,8 +119,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bHd-bd-CG3"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="PAF-6c-75k" id="bnZ-fP-TXS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jD3-Xj-lsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="yjM-uc-l61">
+                    <connections>
+                        <action selector="longTap:" destination="7Xb-He-9b2" id="M3E-2l-mZr"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-676" y="133.5832083958021"/>
         </scene>
